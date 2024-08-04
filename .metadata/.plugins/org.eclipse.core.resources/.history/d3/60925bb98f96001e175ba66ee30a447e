@@ -1,0 +1,40 @@
+package Co1;
+import java.util.Scanner;
+public class main {
+
+	public static void main(String[] args)
+	{
+		
+		try (Scanner sc = new Scanner(System.in)) {
+			int ny=sc.nextInt();
+			int [] ay =new int [ny];
+			int [] py = new int [ny-1];
+			for(int i=1;i<=ny;i++)
+			{
+				ay[i]=sc.nextInt();
+			}
+			for(int i=2;i<=ny-1;i++)
+			{
+				py[i]=sc.nextInt();
+			}
+			int [] op = new int[ny];
+			for(int j=ny-2;j>=0;j--)
+			{
+				op[py[j]-1]+=op[j+1]+Math.abs(ay[j+1]);
+			}
+			if((ay[0]+op[0])%2==0)
+			{
+				System.out.println("0");
+			}
+			else if(ay[0]>0)
+			{
+				System.out.println("+");
+			}
+			else
+			{
+				System.out.println("-");
+			}
+		}
+	}
+
+}

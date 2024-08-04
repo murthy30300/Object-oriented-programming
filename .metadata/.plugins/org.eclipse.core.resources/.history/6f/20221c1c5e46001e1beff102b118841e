@@ -1,0 +1,54 @@
+package co1;
+public class Account
+	{
+		private int id;
+		private int balance;
+		public static void main(String[] args)
+		{
+			Account acc1= new Account(123,5000);
+			Account acc2= new Account();
+			
+			acc1.display();
+			acc2.display();
+			
+			acc1.Withdraw(3000);
+			acc2.Withdraw(2000);
+			
+			acc1.display();
+			acc2.display();
+			
+		}
+		public Account(int id,int balance)
+		{
+			this.id=id;
+			this.balance=balance;
+		}
+		public Account()
+		{
+			this.id=0;
+			this.balance=0;
+		}
+		public void Withdraw(int amount)
+		{
+			if(balance>=amount)
+			{
+				balance=balance-amount;
+				System.out.println("Amount withdrawn:"+amount);
+			}
+			else
+				System.out.println("Insufficient balance");
+		}
+		public void Deposit(int amount)
+		{
+			balance=balance+amount;
+			System.out.println("Amount deposited:"+amount);
+			
+		}
+		public void display()
+		{
+			System.out.println("ACCOUNT ID:"+id);
+			System.out.println("Balance:"+balance);
+		}
+	}
+
+

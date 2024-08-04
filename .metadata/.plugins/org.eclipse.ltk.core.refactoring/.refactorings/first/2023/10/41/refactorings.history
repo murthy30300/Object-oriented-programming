@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring accessors="true" comment="Delete element from project &apos;first&apos;&#x0D;&#x0A;- Original project: &apos;first&apos;&#x0D;&#x0A;- Original element: &apos;login.java&apos;" description="Delete element" element1="src/main/java/login.java" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1696920690888" subPackages="false" version="1.0"/>&#x0A;<refactoring comment="Move &apos;build&apos; to &apos;src&apos;" description="Move &apos;build&apos; to &apos;src&apos;" destination="src" element1="build" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1696920699122" updateReferences="true"/>
+</session>
